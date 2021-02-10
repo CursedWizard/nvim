@@ -1,0 +1,46 @@
+{
+	"explorer.width": 30,
+	"explorer.icon.enableNerdfont": true,
+	"explorer.previewAction.onHover": false,
+	"explorer.keyMappings": {
+		"<cr>": ["expandable?", "expand", "open"],
+		"v": "open:vsplit"
+	},
+	"languageserver": {
+		"ccls": {
+			"command": "/usr/bin/ccls",
+			"filetypes": [
+				"c",
+				"cpp",
+				"objc",
+				"objcpp",
+				"cu"
+			],
+			"rootPatterns": [
+				".ccls",
+				"compile_commands.json",
+				".vim/",
+				".git/",
+				".hg/"
+			],
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				}
+			}
+		}
+	},
+	
+	"python.jediEnabled": true, 
+	"python.linting.enabled": true,
+	"python.linting.pylintEnabled": true,
+	"python.analysis.diagnosticEnabled": true,
+
+	"suggest.detailMaxLength": 50,
+	"suggest.maxPreviewWidth": 35,
+	"_comment": "Max number of lines in suggest window",
+	"suggest.maxCompleteItemCount": 15,
+	"_comment": "Max mumber of columns in suggest window (except type decl)",
+	"suggest.labelMaxLength": 20
+}
+
