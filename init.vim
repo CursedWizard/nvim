@@ -10,7 +10,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'xuhdev/vim-latex-live-preview'
 	Plug 'scrooloose/nerdtree' "filesystem in vim
 	Plug 'tpope/vim-commentary' "comment stuff out using gcc
-	Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
+	Plug 'kevinhwang91/rnvimr' "open ranger in floating window
+  " Plug 'junegunn/vim-peekaboo'
 
 	" Plug 'ap/vim-buftabline' "Open buffers in new tabs
 	Plug 'vimwiki/vimwiki' "for note taking, for files with .wiki
@@ -54,6 +55,7 @@ source /home/funtik/.config/nvim/plug-config/fzf.vim
 source /home/funtik/.config/nvim/plug-config/airline.vim
 source /home/funtik/.config/nvim/plug-config/telescope.vim
 source /home/funtik/.config/nvim/plug-config/rooter.vim
+source /home/funtik/.config/nvim/plug-config/rnvimr.vim
 source /home/funtik/.config/nvim/remap.vim
 
  " Press F12 to switch to UTF-8 encoding

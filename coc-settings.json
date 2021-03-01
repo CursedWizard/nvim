@@ -30,6 +30,8 @@
 			}
 		}
 	},
+	"docthis.includeDescriptionTag":true,
+	"docthis.includeTypes": false,
 	
 	"python.jediEnabled": true, 
 	"python.linting.enabled": true,

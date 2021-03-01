@@ -184,13 +184,14 @@ endfunction
 
 " Use system clipboard for all yank, delete, change and put operations
 " set clipboard=unnamedplus
-" set clipboard=unnamedplus
+set clipboard=unnamedplus
 
-" vnoremap <C-x> :call Save_visually_selected_text_to_file()<cr> <bar> "_c
-vnoremap <C-x> "_c
-vnoremap <C-c> :call Save_visually_selected_text_to_file()<cr>
-" vnoremap <C-c> "0y
-" nnoremap <C-v> "0p
+" vnoremap <C-x> :call Save_visually_selected_text_to_file()<cr> "_c
+" vnoremap <C-x> "_c
+" vnoremap <C-c> :call Save_visually_selected_text_to_file()<cr>
+vnoremap <C-c> "+y
+vnoremap d "_d
+
 
 " vnoremap c "_c
 " nnoremap cc "_cc
@@ -206,9 +207,20 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
-set shiftwidth=4
+nnoremap <leader>d :CocCommand docthis.documentThis<cr>
+
+" nnoremap <C-j> <C-e>
+" nnoremap <C-k> <C-y>
+" nnoremap <C-u> 10k
+" nnoremap <C-d> 10j
+" Spaces & Tabs {{{
+set tabstop=2       " number of visual spaces per TAB
+set softtabstop=2   " number of spaces in tab when editing
+set shiftwidth=2    " number of spaces to use for autoindent
+set expandtab       " tabs are space
 set autoindent
-set tabstop=4
+set copyindent      " copy indent from the previous line
+" }}} Spaces & Tabs
 
 set encoding=utf-8 " The encoding displayed
 set fileencoding=utf-8 " The encoding written to file
