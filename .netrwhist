@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
-let g:netrw_dirhist_6='/home/funtik/Bin/c++'
-let g:netrw_dirhist_5='/home/funtik/.config/nvim'
-let g:netrw_dirhist_4='/home/funtik/Bin/c++/multi'
-let g:netrw_dirhist_3='/home/funtik/.config/nvim'
-let g:netrw_dirhist_2='/home/funtik/Pictures/The Cyber Mentor - YouTube_files'
-let g:netrw_dirhist_1='/home/funtik/Tmp/p_theme/polybar-8/fonts'

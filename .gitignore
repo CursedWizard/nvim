@@ -2,3 +2,4 @@ autoload
 .git
 session
 spell
+.netrwhist
