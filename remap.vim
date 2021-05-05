@@ -117,12 +117,16 @@ endfunction
 
 
 " Moving between buffers
-nnoremap <silent> <TAB> :call CheckNerd("next")<CR>
-nnoremap <silent> <S-TAB> :call CheckNerd("prev")<CR>
+nnoremap <silent> <C-k> :call CheckNerd("next")<CR>
+nnoremap <silent> <C-j> :call CheckNerd("prev")<CR>
+
+" nnoremap <silent> <TAB> :call CheckNerd("next")<CR>
+" nnoremap <silent> <S-TAB> :call CheckNerd("prev")<CR>
 
 
 nnoremap <silent> <A-q> :call CloseBuffer()<CR>
-nnoremap <silent> <C-q> :call CloseAll()<CR>
+" nnoremap <silent> <C-q> :call CloseAll()<CR>
+nnoremap <silent> <C-q> :q!<CR>
 nnoremap <silent> <C-P> :call CheckNerd()<CR>
 " map <C-P> :NERDTreeClose<CR>
 nnoremap <silent> <Leader>bD :Bclose!<CR>
@@ -202,21 +206,33 @@ vnoremap d "_d
 nmap <silent><space>= :vertical resize +5<CR>
 nmap <silent><space>- :vertical resize -5<CR>
 
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
+" nmap <silent> <c-k> :wincmd k<CR>
+" nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
 nnoremap <leader>d :CocCommand docthis.documentThis<cr>
+nnoremap <C-z> _
 
+"git mappings
+nnoremap <leader>gh :diffget //3<CR>
+nnoremap <leader>gu :diffget //2<CR>
+nnoremap <leader>gs :G<CR>
+nnoremap <leader>gb :Telescope git_branches<CR>
+nnoremap <leader>gc :Telescope git_commits<CR>
+
+" Tab manipulation
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
 " nnoremap <C-j> <C-e>
 " nnoremap <C-k> <C-y>
 " nnoremap <C-u> 10k
 " nnoremap <C-d> 10j
 " Spaces & Tabs {{{
-set tabstop=2       " number of visual spaces per TAB
-set softtabstop=2   " number of spaces in tab when editing
-set shiftwidth=2    " number of spaces to use for autoindent
+set tabstop=4       " number of visual spaces per TAB
+set softtabstop=4   " number of spaces in tab when editing
+set shiftwidth=4    " number of spaces to use for autoindent
 set expandtab       " tabs are space
 set autoindent
 set copyindent      " copy indent from the previous line

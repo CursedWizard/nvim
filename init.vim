@@ -1,5 +1,7 @@
 
 call plug#begin('~/.config/nvim/autoload/plugged')
+    "Git integration
+    Plug 'tpope/vim-fugitive'
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
@@ -38,6 +40,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'nvim-lua/popup.nvim'
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim'
+  Plug 'nvim-telescope/telescope-fzy-native.nvim'
+  Plug 'kyazdani42/nvim-web-devicons'
 
 call plug#end()
 
@@ -45,13 +49,14 @@ call plug#end()
 " Setting theme
 set background=light " for the light version
 colorscheme one
+" colorscheme default
 
+" hi Normal ctermbg=none guibg=none
 "
 " Configs
 source /home/funtik/.config/nvim/plug-config/sneak.vim
 source /home/funtik/.config/nvim/plug-config/quickscope.vim
 source /home/funtik/.config/nvim/plug-config/coc.vim
-source /home/funtik/.config/nvim/plug-config/fzf.vim
 source /home/funtik/.config/nvim/plug-config/airline.vim
 source /home/funtik/.config/nvim/plug-config/telescope.vim
 source /home/funtik/.config/nvim/plug-config/rooter.vim
@@ -60,4 +65,5 @@ source /home/funtik/.config/nvim/remap.vim
 
  " Press F12 to switch to UTF-8 encoding
 
+lua require("theprimeagen");
 
